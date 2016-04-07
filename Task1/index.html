@@ -83,12 +83,16 @@
 			</ol>
 			<p>下面是一个表格</p>
 			<table border=1>
-				<tr><th>表头</th><th>表头</th><th>表头</th></tr>
-				<tr><td>单元格</td><td>单元格</td><td><a href="">操作</a></td></tr>
-				<tr><td>单元格</td><td>单元格</td><td><a href="">操作</a></td></tr>
-				<tr><td>单元格</td><td>单元格</td><td><a href="">操作</a></td></tr>
-				<tr><td>单元格</td><td>单元格</td><td><a href="">操作</a></td></tr>
-				<tr><td>总计</td><td>1000</td>
+				<thead>
+					<tr><th>表头</th><th>表头</th><th>表头</th></tr>
+				</thead>
+				<tbody>
+					<tr><td>单元格</td><td>单元格</td><td><a href="">操作</a></td></tr>
+					<tr><td>单元格</td><td>单元格</td><td><a href="">操作</a></td></tr>
+					<tr><td>单元格</td><td>单元格</td><td><a href="">操作</a></td></tr>
+					<tr><td>单元格</td><td>单元格</td><td><a href="">操作</a></td></tr>
+					<tr><td>总计</td><td colspan="2">1000</td>
+				</tbody>
 			</table>
 		</article>
 
@@ -96,11 +100,11 @@
 			<h2>这里以后是个侧栏</h2>
 			<h2>侧栏注册窗口标题</h2>
 			<form action="reg.do" method="post">
-				<label>输入邮箱：<input type="text" name="email"/></label>
-				<br /><span>邮箱地址请按格式输入</span><br />
-				<label>输入密码：<input type="password" name="pwd"/></label>
-				<label>重复输入密码：<input type="password"/></label>
-				<br /><span>密码请为6-16位英文数字</span><br />
+				<label>输入邮箱：<input type="text" name="email"/></label><br />
+				<span>邮箱地址请按格式输入</span><br />
+				<label>输入密码：<input type="password" name="pwd"/></label><br />
+				<label>重复输入密码：<input type="password"/></label><br />
+				<span>密码请为6-16位英文数字</span><br />
 				<span>性别：</span>
 				<label><input type="radio" name="gender" value="m" />男</label>
 				<label><input type="radio" name="gender" value="f" checked />女</label>
